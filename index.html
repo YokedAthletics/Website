@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="YokedAthletics personal training services. Online coaching, custom workouts, accountability, and progress tracking." />
+  <title>YokedAthletics | Personal Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="YokedAthletics home">
+      <img src="logo.svg" alt="YokedAthletics logo" />
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PERSONAL TRAINING • ONLINE COACHING</p>
+        <h1>Build strength.<br />Create discipline.<br />Get yoked.</h1>
+        <p class="hero-text">Personalized training designed around your goals, schedule, and experience level.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#booking">Book Training</a>
+          <a class="button button-outline" href="#pricing">View Package</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <span>YA</span>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow dark">WHAT YOU GET</p>
+        <h2>Training built around you.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="service-card">
+          <span>01</span>
+          <h3>Custom Workout Plan</h3>
+          <p>A structured program matched to your goals, fitness level, schedule, and available equipment.</p>
+        </article>
+        <article class="service-card">
+          <span>02</span>
+          <h3>Online Coaching</h3>
+          <p>Train from anywhere with clear workouts, exercise guidance, and ongoing adjustments.</p>
+        </article>
+        <article class="service-card">
+          <span>03</span>
+          <h3>Accountability</h3>
+          <p>Regular check-ins, progress tracking, and direct support to help you stay consistent.</p>
+        </article>
+        <article class="service-card">
+          <span>04</span>
+          <h3>Goal-Based Training</h3>
+          <p>Programming for strength, muscle gain, fat loss, mobility, and overall fitness.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section section-dark split-section">
+      <div>
+        <p class="eyebrow">ABOUT YOKEDATHLETICS</p>
+        <h2>Real coaching. Clear structure. Lasting progress.</h2>
+      </div>
+      <div>
+        <p>YokedAthletics helps people become stronger, healthier, and more confident through practical training and consistent support.</p>
+        <p>Every program is designed to meet you where you are and give you a clear path forward—without unnecessary complexity.</p>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing-section">
+      <div class="section-heading center">
+        <p class="eyebrow dark">MAIN PACKAGE</p>
+        <h2>Online Personal Training</h2>
+      </div>
+      <div class="price-card">
+        <p class="package-name">ONE MONTH</p>
+        <p class="price"><span>$</span>100</p>
+        <ul>
+          <li>Personalized workout program</li>
+          <li>Online coaching support</li>
+          <li>Progress tracking and check-ins</li>
+          <li>Program updates when needed</li>
+        </ul>
+        <a id="paymentButton" class="button button-dark full-width" href="#" data-payment-link="">Pay for Training</a>
+        <p class="small-note">Secure checkout link will open after your payment account is connected.</p>
+      </div>
+    </section>
+
+    <section id="booking" class="section section-gray">
+      <div class="section-heading">
+        <p class="eyebrow dark">GET STARTED</p>
+        <h2>Book your training consultation.</h2>
+        <p>Complete the form below. Your email app will open with your information ready to send.</p>
+      </div>
+      <form id="bookingForm" class="booking-form">
+        <label>
+          Full name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone" required />
+        </label>
+        <label>
+          Main fitness goal
+          <select name="goal" required>
+            <option value="">Select a goal</option>
+            <option>Lose weight</option>
+            <option>Build muscle</option>
+            <option>Gain strength</option>
+            <option>Improve mobility</option>
+            <option>General fitness</option>
+          </select>
+        </label>
+        <label class="full-field">
+          Tell me about your goals and availability
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button button-dark" type="submit">Send Booking Request</button>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div>
+        <p class="eyebrow dark">CONTACT</p>
+        <h2>Ready to begin?</h2>
+      </div>
+      <div class="contact-links">
+        <a href="tel:+15184615856">518-461-5856</a>
+        <a href="mailto:mikegreen@yokedathletics.co.site">mikegreen@yokedathletics.co.site</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.svg" alt="YokedAthletics" />
+    <p>© <span id="year"></span> YokedAthletics. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
